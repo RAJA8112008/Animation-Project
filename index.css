@@ -16,9 +16,7 @@ body{
     transform:translate(-50%,-50%) scale(0);
 }
 #nav{
-    
     width: 100%;
-  
     position: fixed;
     z-index:99;
     padding:25px;
@@ -28,7 +26,6 @@ body{
     gap: 40px;
 }
 #nav-part1{
-    
     height: 82px;
     overflow: hidden;
 }
@@ -140,7 +137,6 @@ html, body {
 .child{
     height:54vh;
     width:38vw;
-    /* background-color: red; */
     position: relative;
     display: flex;
     justify-content: center;
@@ -170,7 +166,6 @@ height:100%;
         position: absolute;
         top:50%;
         left:50%;
-        /* border-radius: 50%; */
         opacity: 1;
         scale: 1;
         transform:translate(-50%,-50%) ;
