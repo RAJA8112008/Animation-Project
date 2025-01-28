@@ -194,4 +194,26 @@ height:100%;
         z-index:9;
         background-color: palegoldenrod;
     }
+    #page3{
+        min-height: 120vh;
+        width: 100%;
+        background: #f7f7f7; 
+        position: relative;
+        display: flex;
+        align-items:center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .child{
+        height:54vh;
+        width:88vw;
+        position: relative;
+        padding: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .child img{
+    height:100%;
+    }
 }
