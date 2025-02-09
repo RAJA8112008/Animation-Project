@@ -93,3 +93,7 @@ text-align: right;
     border-radius: 50%;
     background-color: #888;
 }
+#second{
+    width: 100%;
+    height: 100vh;
+}
