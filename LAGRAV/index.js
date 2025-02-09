@@ -46,15 +46,29 @@ function circleMouseFollower() {
 circleMouseFollower();
 firstpageAnim();
 
-    document.querySelectorAll(".elem").forEach(function (elem){
-        elem.addEventListener("mousemove", function(dets){
-            var diff =dets.clirntY-elem.getBoundingClientRect().top;
-            gsap.to(elem.querySelector("img"),{
-                opacity:1,
-                ease:Power1,
-                top:diff,
-                left:dets.clientX
-            })
+document.querySelectorAll(".elem").forEach(function (elem){
+    var rotate = 0;
+    var diffrot = 0;
+    
+    elem.addEventListener("mouseleave", function(dets){
+        gsap.to(elem.querySelector("img"),{
+            opacity: 0,
+            ease: "power3.out", // Fixed error
+            duration: 0.5,
         });
     });
 
+    elem.addEventListener("mousemove", function(dets){
+        var diff = dets.clientY - elem.getBoundingClientRect().top; // Fixed typo: clirntY → clientY
+        diffrot = dets.clientX - rotate;
+        rotate = dets.clientX;
+
+        gsap.to(elem.querySelector("img"),{
+            opacity: 1,
+            ease: "power3.out", // Fixed error
+            top: diff, 
+            left: dets.clientX,
+            rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),
+        });
+    });
+});
