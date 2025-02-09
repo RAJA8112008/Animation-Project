@@ -126,3 +126,17 @@ border-top: 1px solid #888;
     z-index:999;
     position: absolute;
 }
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 50px;
+    padding: 10vw 10vw;
+    padding-left:40vw;
+    width: 100%;
+background-color: black;
+}
+#about img{
+    width: 200px;
+}
