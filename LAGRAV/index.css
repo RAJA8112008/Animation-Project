@@ -121,8 +121,8 @@ border-top: 1px solid #888;
     border-bottom:1px solid #888;
 }
 .elem img{
-    opacity: 0;
-    height: 100%;
+   display: none;
+    height: 140%;
     z-index:999;
     position: absolute;
 }
