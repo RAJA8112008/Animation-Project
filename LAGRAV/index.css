@@ -24,7 +24,11 @@ body{
 }
 .bounding{
     width: fit-content; 
-    background-color: red;
+    
+    overflow: hidden;
+}
+.bounding .boundingelem {
+    transform: translateY(100%);
 }
 #hero{
     position:relative ;
