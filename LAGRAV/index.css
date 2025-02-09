@@ -162,10 +162,38 @@ width:30rem;
 }
 #subscribe{
     color: #fff;
+    padding-bottom:7vw;
     padding: 20px 30px;
     background-color: black;
 }
 #subscribe h5{
     text-transform: uppercase;
     opacity: .6;
+}
+#subscribe h3{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 30px;
+}
+#footerleft{
+display: flex;
+gap: 20px;
+}
+#footerright{
+    display: flex;
+    gap: 30px;
+}
+#footer a{
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#fff ;
+    text-decoration: none;
 }
