@@ -25,6 +25,22 @@ function firstpageAnim() {
         ease: "expo.inOut"
     }, "-=0.5"); 
 }
+function circleChaptaKaro(){
+    //define default scale value
+    var xscale = 1;
+    var yscale =1;
+    var xprev =0;
+    var yprev =0;
+    window.addEventListener("mouse", function(dets){
+         
+        xprev =dets.clientX;
+        yprev =dets.clientY;
+        
+         xscale =gsap.utils.clamp(.8, 1.2,dets.clientX- xprev);
+         yscale =gsap.utils.clamp(.8, 1.2,dets.clientY- yprev);
+    });
+}
+circleChaptaKaro();
 
 function circlemouseFollower() {
     window.addEventListener("mousemove", function (dets) {
