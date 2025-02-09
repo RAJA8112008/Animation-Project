@@ -229,3 +229,6 @@ gap: 20px;
     color:#fff ;
     text-decoration: none;
 } 
+#about img{
+    border-radius: 50%;
+}
